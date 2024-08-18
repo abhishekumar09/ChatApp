@@ -26,3 +26,9 @@ const userSchema = mongoose.Schema({
 const User = mongoose.model("User", userSchema);
 
 export default User;
+
+
+// schema data jo bhjna chahte hein client ko through json in (postman)
+
+
+// yhn pr bs template hei functionality controller mein hei
