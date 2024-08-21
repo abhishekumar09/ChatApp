@@ -36,7 +36,7 @@ dotenv.config();
 
 app.use(express.json());                                 // use for passing the data in json form 
 
-app.use(cors());
+app.use(cors());      // it is middleware (enable course for all requests)
 
 const PORT = process.env.PORT || 5001;
 const URI = process.env.MONGODB_URI;

@@ -66,7 +66,7 @@ export const signup = async (req, res) => {                                  // 
         message: "User registered successfully",
         user: {
           _id: newUser._id,
-          name: newUser.name,
+          name: newUser.name,                                         // we not write password because we don't want to show in localstorage
           email: newUser.email,
         },
       });
