@@ -10,6 +10,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 function App() {
   const [authUser, setAuthUser] = useAuth();
   console.log(authUser);
+
   return (
     <>
       <Routes>
