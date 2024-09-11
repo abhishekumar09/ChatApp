@@ -20,7 +20,7 @@ export default function Login() {
       password: data.password,
     };
     axios
-      .post("http://localhost:5002/user/login", userInfo) // axios use for http request send and recieve krne ke liye allow krta hei
+      .post("/api/user/login", userInfo) // axios use for http request send and recieve krne ke liye allow krta hei
       .then((response) => {
         console.log(response.data);
         if (response.data) {

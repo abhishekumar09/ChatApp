@@ -29,7 +29,7 @@ export default function Signup() {
       confirmpassword: data.confirmPassword,
     };
     await axios                           // await use for ki error na aaye aur jb response aaye tbhi yeh execute ho nhi toh ruki rhe 
-      .post("http://localhost:5002/user/signup", userInfo) // axios use for http request send and recieve krne ke liye allow krta hei
+      .post("/api/user/signup", userInfo) // axios use for http request send and recieve krne ke liye allow krta hei
       .then((response) => {
         console.log(response.data);
         if (response.data) {

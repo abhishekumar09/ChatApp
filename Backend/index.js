@@ -51,7 +51,7 @@ try {
   console.log(error);
 }
 
-app.use("/user", userRoute);
+app.use("/api/user", userRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is Running on port ${PORT}`);
