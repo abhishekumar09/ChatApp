@@ -4,7 +4,7 @@ import Message from "../models/message.model.js";
 export const sendMessage = async (req, res) => {
   try {
     const { message } = req.body;
-    const { id: receiverId } = req.params;
+    const { id: receiverId } = req.params;   // reciever id
     const senderId = req.user._id; // current logged in user
     let conversation = await Conversation.findOne({
       members: { $all: [senderId, receiverId] },
